@@ -1,0 +1,44 @@
+@import '../../../styles/color';
+@import '../../../styles/fonts';
+@import '../../../styles/normalaze';
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__email {
+		border: $yellow 1px solid;
+		padding: 30px 200px 30px 53px;
+		font-size: 15px;
+		font-family: 'Roboto', sans-serif;
+		color: $dark_placeholder;
+		&::placeholder {
+			font-size: 20px;
+			font-family: 'Roboto', sans-serif;
+			color: $dark_placeholder;
+		}
+	}
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__span {
+		background-color: $yellow;
+		padding: 26px 63px 26px 63px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 1137px) {
+	.form {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		padding: 40px;
+		&__email {
+			border: $yellow 1px solid;
+			padding: 30px 50px 30px 50px;
+		}
+	}
+}

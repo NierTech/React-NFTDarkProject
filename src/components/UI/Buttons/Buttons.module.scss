@@ -1,0 +1,12 @@
+/* STYLING BTN */
+.btn_wallet {
+	padding: 16px 20px 16px 20px;
+	background: transparent;
+	border: 1px solid #ffce4e;
+	cursor: pointer;
+	> span {
+		font-size: 18px;
+		font-family: 'Roboto', sans-serif;
+		color: #ffce4e;
+	}
+}

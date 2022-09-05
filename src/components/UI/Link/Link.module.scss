@@ -1,0 +1,16 @@
+@import '../../styles/color';
+@import '../../styles/normalaze';
+@import '../../styles/fonts';
+.link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+	> a {
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		color: $white;
+		border: 1px solid #fde8b3;
+		padding: 24px 65px;
+	}
+}

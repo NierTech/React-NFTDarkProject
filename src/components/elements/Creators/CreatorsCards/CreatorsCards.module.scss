@@ -1,0 +1,62 @@
+@import '../../../styles/color';
+@import '../../../styles/fonts';
+@import '../../../styles/normalaze';
+.creators {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 80px;
+	margin-top: 100px;
+	&__cards {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.info {
+	display: flex;
+	align-items: center;
+	background-color: $purple;
+	padding: 20px 40px 20px 40px;
+}
+.person {
+	margin-left: 10px;
+	&__title {
+		font-size: 32px;
+		font-family: 'Roboto', sans-serif;
+		color: $white;
+	}
+	&__balance {
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		color: $dark_pink;
+	}
+}
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__amount {
+		font-size: 32px;
+		font-family: 'Oxanium', sans-serif;
+		color: $white;
+	}
+	&__type {
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		color: $dark_pink;
+	}
+}
+
+.stats {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 300px;
+}
+@media screen and (max-width: 1137px){
+	.creators {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+}

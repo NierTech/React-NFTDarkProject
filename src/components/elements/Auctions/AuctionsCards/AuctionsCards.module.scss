@@ -1,0 +1,69 @@
+@import '../../../styles/color';
+@import '../../../styles/fonts';
+@import '../../../styles/normalaze';
+.cards {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 80px;
+	&__content {
+		background-color: $purple;
+		padding: 30px;
+	}
+}
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+	&__left {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	&__title {
+		font-size: 28px;
+		font-family: 'Roboto', sans-serif;
+		color: $white;
+	}
+	&__author {
+		font-size: 20px;
+		font-family: 'Roboto', sans-serif;
+		color: $dark_pink;
+	}
+	&__likes {
+		font-size: 32px;
+		font-family: 'Roboto', sans-serif;
+		color: $dark_purple;
+		padding-left: 8px;
+	}
+	&__heart {
+		cursor: pointer;
+	}
+}
+.description {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	&__title {
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
+		color: $beige;
+	}
+	&__price {
+		font-family: 'Oxanium', sans-serif;
+		font-size: 24px;
+		color: $white;
+	}
+}
+@media screen and (max-width: 1137px){
+	.cards {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 10px;
+	}
+}
